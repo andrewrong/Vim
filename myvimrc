@@ -1,3 +1,15 @@
+"利用vundle和github同步vim的配置文件和插件
+filetype off
+"设置vundle的路径
+set rtp+=$VIM/vimfiles/bundle/vundle
+"set 插件的安装路径
+call vundle#rc('$VIM/vimfiles/bundle')
+
+Bundle 'gmarik/vundle'
+filetype plugin indent on
+"my bundle
+Bundle 'Markdown'
+"==================================================
 "我自己的vim配置
 set nocompatible
 
