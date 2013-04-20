@@ -1,0 +1,76 @@
+"我自己的vim配置
+set nocompatible
+
+"设置backspace能删除任何文字
+set backspace=2
+"设置mapleader
+let mapleader = ","
+
+"窗口最大化
+au GUIEnter * simalt ~x
+" 设定文件浏览器目录为当前目录
+set bsdir=buffer
+set autochdir
+
+
+"显示行号
+set nu
+
+"打开语法高亮
+syntax on
+
+set softtabstop=4
+set shiftwidth=4
+"禁止用空格代替tab
+set noexpandtab
+
+
+"自动缩进设置
+set cindent
+set smartindent
+set autoindent
+"边搜索边显示结果
+set incsearch
+
+"用来匹配括号
+set showmatch
+
+"当文件在外面被改变的时候能自动的读入
+set autoread
+
+"设置背景和字体
+set guifont=Consolas:h11
+colo evening
+
+"设置支持的文件编码类型，目前设置为utf-8和gbk
+
+
+"设置搜索结果高亮显示
+set hlsearch
+
+"设置记录的历史操作列表
+set history=50
+
+"设置支持鼠标
+set mouse=a
+
+"加载文件能自动识别文件
+filetype plugin indent on
+set completeopt=longest,menu
+"设置折叠
+set foldcolumn=2
+set foldmethod=indent
+set foldlevel=3
+
+"minibuf config
+ let g:miniBufExplMapWindowNavVim = 1 
+ let g:miniBufExplMapWindowNavArrows = 1 
+ let g:miniBufExplMapCTabSwitchBufs = 1 
+ let g:miniBufExplModSelTarget = 1 
+
+set fileencodings=utf-8,gb2312,gbk,gb18030
+set termencoding=utf-8
+"set fileformats=unix
+set encoding=prc
+ 
+
